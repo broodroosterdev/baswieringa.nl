@@ -6,16 +6,16 @@ disableKinds = ["taxonomy"]
     writeStats = true
 
 [params]
-    title = "Sada Theme"
-    author = "Darshan Baral"
-    description = "Simple portfolio theme"
-    copyright = "Custom copyright message"
+    title = "Bas Wieringa"
+    author = "Bas Wieringa"
+    description = "Portfolio van Bas Wieringa"
+    copyright = "Template:"
     theme = "dark" # `dark` or `light`
 
     # Profile section
     [params.profile]
-        name = "First Last"
-        title = "Abbr., K.A."
+        name = "Bas Wieringa"
+        title = "Software Ontwikkelaar"
         photo = "images/profile.jpg"
 
     # Section for links to social websites
@@ -32,12 +32,12 @@ disableKinds = ["taxonomy"]
         url = "#"
         title = "GitHub"
 		
-		[[params.social.list]]
+	[[params.social.list]]
         icon = "ai ai-google-scholar"
         url = "#"
         title = "Google Scholar"
 		
-		[[params.social.list]]
+	[[params.social.list]]
         icon = "ai ai-researchgate"
         url = "#"
         title = "ResearchGate"		
