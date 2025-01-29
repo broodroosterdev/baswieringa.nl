@@ -1,6 +1,6 @@
 {{ with resources.Get "main.css" | css.PostCSS | minify }}
 <style>{{ .Content | safeCSS }}</style>
 {{ end }}
-{{ with resources.Get "fontawesome.css" | css.PostCSS | minify }}
+{{ with resources.Get "fontawesome.css" | minify }}
 <style>{{ .Content | safeCSS }}</style>
 {{ end }}
