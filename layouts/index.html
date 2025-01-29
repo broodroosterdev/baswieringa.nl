@@ -2,24 +2,22 @@
 <section
   class="w-full sm:w-2/5 bg-gray-200 dark:bg-dark2 rounded shadow flex flex-col justify-between"
 >
-  <div>
-    {{- partial "header.html" . -}}
-    {{ partial "name.html" . }}
+  <div class="mt-4">
+    {{/*  {{- partial "header.html" . -}}  */}}
     {{ partial "profilePhoto" . }}
+    {{ partial "name.html" . }}
     {{ partial "social.html" . }}
-    {{ partial "aboutDesc" . }}
-    {{ partial "language.html" . }}
-    {{ partial "hobby.html" . }}
+    {{/*  {{ partial "aboutDesc" . }}  */}}
+    {{/*  {{ partial "language.html" . }}  */}}
   </div>
-  {{- partial "footer.html" . -}}
 </section>
 
-<section class="w-full sm:w-3/5 px-3">  
+<section class="w-full sm:w-3/5 px-3 mt-4">  
+  {{ partial "education.html" . }}  
   {{ partial "experience.html" . }}
-  {{ partial "education.html" . }}
-  {{ partial "project.html" . }}
-  {{ partial "skill.html" . }}
+  {{ partial "internship.html" . }}
 </section>
+{{- partial "footer.html" . -}}
 {{ end }}
 
 

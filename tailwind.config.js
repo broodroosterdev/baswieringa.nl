@@ -48,8 +48,8 @@ module.exports = {
             td: { color: theme(`colors.gray.200`) },
             blockquote: { color: theme(`colors.gray.200`) },
             a: {
-              color: theme(`colors.yellow.500`),
-              "&:hover": { color: theme(`colors.yellow.300`) },
+              color: theme(`colors.green.500`),
+              "&:hover": { color: theme(`colors.green.300`) },
             },
           },
         },

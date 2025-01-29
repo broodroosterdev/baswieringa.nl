@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://baswieringa.nl"
 languageCode = "en-us"
 disableKinds = ["taxonomy"]
 
@@ -9,7 +9,7 @@ disableKinds = ["taxonomy"]
     title = "Bas Wieringa"
     author = "Bas Wieringa"
     description = "Portfolio van Bas Wieringa"
-    copyright = "Template:"
+    copyright = "© Bas Wieringa"
     theme = "dark" # `dark` or `light`
 
     # Profile section
@@ -24,39 +24,27 @@ disableKinds = ["taxonomy"]
 
         [[params.social.list]]
         icon = "fab fa-linkedin-in"
-        url = "#"
+        url = "https://www.linkedin.com/in/bas-wieringa"
         title = "LinkedIn"
 
         [[params.social.list]]
         icon = "fab fa-github"
-        url = "#"
+        url = "https://github.com/broodroosterdev"
         title = "GitHub"
 		
-	[[params.social.list]]
-        icon = "ai ai-google-scholar"
-        url = "#"
-        title = "Google Scholar"
-		
-	[[params.social.list]]
-        icon = "ai ai-researchgate"
-        url = "#"
-        title = "ResearchGate"		
+	    [[params.social.list]]
+        icon = "fas fa-envelope"
+        url = "mailto:basmakes+resume@gmail.com"
+        title = "Mail"	
 
     # Education section
     [params.education]
-        title = "Education"
+        title = "Opleiding"
 
         [[params.education.list]]
-        degree = "Masters in Degree 1"
-        college = "University Number 1"
-        dates = "2016 - 2018"
-        thesis_title = "Title of the dissertation"
-        thesis_link = "#"
-
-        [[params.education.list]]
-        degree = "Bachelors in Degree 2"
-        college = "University Number 2"
-        dates = "2010 - 2014"
+        degree = "HBO-ICT"
+        college = "Windesheim Zwolle"
+        dates = "sep. 2019 - jun. 2023"
 
     # Languages section
     [params.language]
@@ -70,68 +58,70 @@ disableKinds = ["taxonomy"]
         language = "Bird"
         level = "Basic"
 
-    # Interests section
-    [params.hobbies]
-        title = "Hobbies"
-
-        [[params.hobbies.list]]
-        interest = "Travelling"
-		
-		[[params.hobbies.list]]
-        interest = "Music"
-
-        [[params.hobbies.list]]
-        interest = "Flying"
-
-        [[params.hobbies.list]]
-        interest = "Baking"
-
     [params.aboutme]
         description = "Tagline. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     # Experiences section
     [params.experiences]
-        title = "Experiences"
+        title = "Ervaring"
 
         [[params.jobs.list]]
-        position = "Job Number 1"
-        dates = "2018 - *Present*"
-		link = "#"
-        company = "Company name 1"
+        position = "Junior software ontwikkelaar"
+        dates = "sep. 2023 - *Heden*"
+        company = "Water Platform Company"
+        link = "https://www.hydronet.com/"
+        details = """
+Ontwikkeling en onderhoud aan de frontend (Angular) en backend (ASP.NET) van HydroNET.
+Ondersteuning bij infra werkzaamheden en opzetten van Kubernetes omgeving.
+"""
 
         [[params.jobs.list]]
-        position = "Job Number 2"
-        dates = "2016 - 2018"
-		link = "#"
-        company = "Company name 2"
-        details = "Brief description of the `work` done. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        position = "Vakkenvuller"
+        dates = "mei 2018 - jan. 2023"
+        company = "PLUS Wilmink"
+        link = "https://www.plus.nl"
+        details = "Geholpen als onderdeel van de vulploeg, laden/lossen en magazijn onderhouden."
+        
+    # Internships section
+    [params.internships]
+        title = "Stages"
 
-    # Projects section
-    [params.projects]
-        title = "Projects"
-
-        [[params.projects.list]]
-        title = "Awesome Project 1"
-        url = "#"
-        description = "Description of the *awesome* project 1"
+        [[params.internships.list]]
+        title = "Future Technology"
+        dates = "sep. 2022 - jan. 2023"
+        company = "Pharox"
+        link = "https://pharox.io"
+        description = """
+Ontwikkelen van een proof-of-concept blockchain applicatie waarmee
+het transport en onderhoud van industriële gasflessen wordt bijgehouden.
+"""
 		
-		[[params.projects.list]]
-        title = "Awesome Project 2"
-        url = "#"
-        description = "Description of the **awesome** project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		[[params.internships.list]]
+        title = "Mobile Solutions"
+        dates = "feb. 2022 - jun. 2022"
+        company = "Behive"
+        link = "https://www.behive.nl"
+        description = """
+Ontwikkelen van PWA (Progressive Web App) waarin gebruikers challenges over de natuur kunnen doen.
+Gebruik gemaakt van React in de frontend en Java Spring Boot in de backend.
+Hosting opgezet met Docker Compose inclusief een Github Actions ontwikkelstraat.
+"""
+        [[params.internships.list]]
+        title = "Quality in Software Design"
+        dates = "aug. 2021 - dec. 2021"
+        company = "Djurve"
+        link = "https://www.djurve.nl"
+        description = """
+Opzetten van een stabiele infrastructuur in Azure op basis van Nomad en Docker.
+Dit in combinatie met het omvormen van de bestaande monolitische ASP.NET applicatie naar microservices.
+"""
 
-    # Skills section
-    [params.skills]
-        title = "Skills"
-
-        [[params.skills.list]]
-        skill = "Skill 1, Skill 2"
-        skillrating = 95 # out of 100
-                
-        [[params.skills.list]]
-        skill = "Skill 3"
-        skillrating = 90
-		
-        [[params.skills.list]]
-        skill = "Skill 4"
-        skillrating = 80
+        [[params.internships.list]]
+        title = "Web Development"
+        dates = "apr. 2021 - jun. 2021"
+        company = "California Harderwijk"
+        link = "https://www.californiaharderwijk.nl"
+        description = """
+Ontwikkelen van een PWA (Progressive Web App) voor het aangeven van aanwezigheid en reserveren van werkruimtes.
+Gebruik gemaakt van Vue en Tailwind in de frontend en een Directus CMS als backend.
+"""
