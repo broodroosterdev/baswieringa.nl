@@ -1,7 +1,6 @@
-{{ $css := resources.Get "main.css" }}
-{{ $css = $css | css.PostCSS }}
-{{ if hugo.IsProduction }}
-{{ $css = $css | minify | fingerprint | resources.PostProcess }}
+{{ with resources.Get "main.css" | css.PostCSS | minify }}
+<style>{{ .Content | safeCSS }}</style>
 {{ end }}
-<link href="{{ $css.RelPermalink }}" rel="stylesheet" />
-
+{{ with resources.Get "fontawesome.css" | css.PostCSS | minify }}
+<style>{{ .Content | safeCSS }}</style>
+{{ end }}

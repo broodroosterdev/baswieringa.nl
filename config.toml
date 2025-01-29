@@ -16,7 +16,8 @@ disableKinds = ["taxonomy"]
     [params.profile]
         name = "Bas Wieringa"
         title = "Software Ontwikkelaar"
-        photo = "images/profile.jpg"
+        photo = "images/profile.webp"
+        photo_jpg = "images/profile.jpg"
 
     # Section for links to social websites
     [params.social]
