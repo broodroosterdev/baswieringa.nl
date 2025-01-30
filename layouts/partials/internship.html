@@ -3,7 +3,7 @@
     <i class="fas fa-id-badge"></i> {{ .Site.Params.internships.title }}
   </h2>
   {{ range .Site.Params.internships.list }}
-  <h3 class="mb-1 mt-2 inline"><span>{{ .title }}&nbsp;&middot;</span></h3>
+  <h3 class="mb-1 mr-1 mt-2 inline"><span>{{ .title }}&nbsp;&middot;</span></h3>
   <p class="mb-0 inline">
     {{ if .link }}
     <a class="font-semibold" href="{{ .link }}">{{ .company }}</a>

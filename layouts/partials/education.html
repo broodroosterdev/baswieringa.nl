@@ -4,7 +4,7 @@
     {{ .Site.Params.education.title }}
   </h2>
   {{ range.Site.Params.education.list }}
-  <h3 class="mb-1 inline"><span>{{ .degree }}&nbsp;&middot;</span></h3>
+  <h3 class="mb-1 mr-1 inline"><span>{{ .degree }}&nbsp;&middot;</span></h3>
   <p class="mb-0 inline">
     <a class="font-semibold" href="{{ .url }}">{{ .college }}</a> &middot; {{ .dates }}
   </p>
