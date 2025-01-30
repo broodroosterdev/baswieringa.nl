@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language }}" class="{{ .Site.Params.theme }}" prefix="og: https://ogp.me/ns#">
-  {{- partial "head.html" . -}}
-  <body
-    class="max-w-screen-lg mx-auto prose pb-3 dark:prose-dark bg-gray-100 dark:bg-dark1 duration-250"
-  >
-    <main class="flex sm:flex-row-reverse flex-row flex-wrap">
-      {{- block "main" . }}{{ end }}
-    </main>
-  </body>
+<html lang="{{ .Site.Language }}" prefix="og: https://ogp.me/ns#">
+{{- partial "head.html" . -}}
+
+<body
+  class="print:max-w-full max-w-screen-lg mx-auto prose pb-3 dark:prose-dark text-black dark:text-white bg-gray-100 dark:bg-dark1 duration-250">
+  <main class="flex sm:flex-row-reverse flex-row flex-wrap">
+    {{- block "main" . }}{{ end }}
+  </main>
+</body>
+
 </html>

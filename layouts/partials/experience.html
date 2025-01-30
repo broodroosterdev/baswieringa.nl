@@ -1,19 +1,19 @@
-<div class="mb-8">
-  <h2 class="mt-8 sm:mt-0">
-    <i class="fas fa-briefcase text-green-500"></i>
+<div class="mb-4">
+  <h2 class="mt-4 mb-2 sm:mt-0">
+    <i class="fas fa-briefcase"></i>
     {{ .Site.Params.experiences.title }}
   </h2>
 
   {{ range.Site.Params.jobs.list }}
-  <h3 class="mb-1">{{ .position }}</h3>
-  <p class="ml-1 mb-0">
+  <h3 class="mb-1 inline">{{ .position }} &middot; </h3>
+  <p class="mb-0 inline">
     {{ if .link }}
     <a class="font-semibold" href="{{ .link }}">{{ .company }}</a>
     {{ else }}
-    <span class="font-semibold text-green-500">{{ .company }}</span>
+    <span class="font-semibold">{{ .company }}</span>
     {{ end }}
-     &middot; {{ .dates | markdownify }}
+    &middot; {{ .dates | markdownify }}
   </p>
-  <p class="ml-1 mb-0 italic">{{ .details | markdownify }}</p>
+  <p class="ml-1 mb-2 italic">{{ .details | markdownify }}</p>
   {{ end }}
 </div>

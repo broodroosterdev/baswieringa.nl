@@ -1,17 +1,17 @@
-<div class="mb-8">
-<h2 class="mt-4">
-    <i class="fas fa-id-badge text-green-500"></i> {{ .Site.Params.internships.title }}
-</h2>
-{{ range .Site.Params.internships.list }}
-<h3 class="mb-1"><span class="text-warning">{{ .title }}</span></h3>
-<p class="ml-1 mb-0">
+<div class="mb-4">
+  <h2 class="mt-4 mb-2">
+    <i class="fas fa-id-badge"></i> {{ .Site.Params.internships.title }}
+  </h2>
+  {{ range .Site.Params.internships.list }}
+  <h3 class="mb-1 mt-2 inline"><span class="text-warning">{{ .title }} &middot; </span></h3>
+  <p class="mb-0 inline">
     {{ if .link }}
     <a class="font-semibold" href="{{ .link }}">{{ .company }}</a>
     {{ else }}
     <span class="font-semibold">{{ .company }}</span>
     {{ end }}
-     &middot; {{ .dates | markdownify }}
+    &middot; {{ .dates | markdownify }}
   </p>
-<p class="mb-0 ml-1 italic">{{ .description | markdownify }}</p>
-{{ end }}
+  <p class="mb-2 ml-1 italic">{{ .description | markdownify }}</p>
+  {{ end }}
 </div>

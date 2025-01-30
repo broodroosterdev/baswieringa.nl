@@ -4,13 +4,15 @@ disableKinds = ["taxonomy"]
 
 [build]
     writeStats = true
+    [[build.cachebusters]]
+        source = 'layouts/.*'
+        target = 'css'
 
 [params]
     title = "Bas Wieringa"
     author = "Bas Wieringa"
     description = "Portfolio van Bas Wieringa"
     copyright = "© Bas Wieringa"
-    theme = "dark" # `dark` or `light`
 
     # Profile section
     [params.profile]
@@ -26,16 +28,19 @@ disableKinds = ["taxonomy"]
         [[params.social.list]]
         icon = "fab fa-linkedin-in"
         url = "https://www.linkedin.com/in/bas-wieringa"
+        text = "linkedin.com/in/bas-wieringa"
         title = "LinkedIn"
 
         [[params.social.list]]
         icon = "fab fa-github"
         url = "https://github.com/broodroosterdev"
+        text = "github.com/broodroosterdev"
         title = "GitHub"
 		
 	    [[params.social.list]]
         icon = "fas fa-envelope"
         url = "mailto:basmakes+resume@gmail.com"
+        text = "basmakes@gmail.com"
         title = "Mail"	
 
     # Education section
@@ -46,6 +51,7 @@ disableKinds = ["taxonomy"]
         degree = "HBO-ICT"
         college = "Windesheim Zwolle"
         dates = "sep. 2019 - jun. 2023"
+        url = "https://www.windesheim.nl/over-windesheim/locatie-zwolle"
 
     # Languages section
     [params.language]

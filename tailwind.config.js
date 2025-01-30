@@ -2,10 +2,13 @@ const theme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   important: true,
-  purge: ["layouts/**/*.html"],
-  darkMode: "class", // or 'media' or 'class'
+  content: ["layouts/**/*.html"],
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        print: { raw: 'print' },
+      },
       backgroundColor: (theme) => ({
         dark1: "#202124",
         dark2: "#2a2b2e",
@@ -15,12 +18,15 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: theme(`colors.blue.700`),
+              color: theme(`colors.green.700`),
               textDecoration: "none",
               "&:hover": {
-                color: theme(`colors.blue.900`),
+                color: theme(`colors.green.900`),
                 textDecoration: "underline",
               },
+            },
+            i: {
+              color: theme(`colors.green.700`),
             },
             p: {
               marginBottom: "0em",
@@ -51,11 +57,19 @@ module.exports = {
               color: theme(`colors.green.500`),
               "&:hover": { color: theme(`colors.green.300`) },
             },
+            i: {
+              color: theme(`colors.green.500`),
+            },
           },
         },
       }),
     },
   },
   variants: { typography: ["dark"], extend: {} },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require('tailwindcss/plugin')(function ({ addVariant }) {
+      addVariant('dark', '@media not print { .dark & }')
+    }),
+  ],
 };
