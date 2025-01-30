@@ -1,10 +1,5 @@
-{{ $css := resources.Get "main.css" }}
-{{ $css = $css | css.PostCSS }}
-{{ if hugo.IsProduction }}
-{{ $css = $css | minify | fingerprint  }}
-{{ end }}
-{{ with $css | resources.PostProcess }}
-<style>{{ $css.Content | safeCSS }}</style>
+{{ with resources.Get "main.css" | css.PostCSS | minify | fingerprint | resources.PostProcess }}
+<style>{{ .Content | safeCSS }}</style>
 {{ end }}
 
 {{ with resources.Get "fontawesome.css" | minify }}
