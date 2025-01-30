@@ -5,7 +5,7 @@
   </h2>
 
   {{ range.Site.Params.jobs.list }}
-  <h3 class="mb-1 inline">{{ .position }} &middot; </h3>
+  <h3 class="mb-1 inline"><span>{{ .position }}&nbsp;&middot;</span></h3>
   <p class="mb-0 inline">
     {{ if .link }}
     <a class="font-semibold" href="{{ .link }}">{{ .company }}</a>
