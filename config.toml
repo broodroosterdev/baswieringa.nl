@@ -101,7 +101,7 @@ Gebruik gemaakt van Angular in de frontend en .NET C# in de backend en scheduler
         
     # Internships section
     [params.internships]
-        title = "Stages"
+        title = "Stage opdrachten"
 
         [[params.internships.list]]
         title = "Future Technology"
