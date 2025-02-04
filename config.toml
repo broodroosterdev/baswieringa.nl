@@ -81,6 +81,16 @@ disableKinds = ["taxonomy"]
 Ontwikkeling en onderhoud aan de frontend (Angular) en backend (ASP.NET) van HydroNET.
 Ondersteuning bij infra werkzaamheden en opzetten van Kubernetes omgeving.
 """
+	[[params.jobs.list]]
+        position = "Afstudeerstage software ontwikkelaar"
+        dates = "feb. 2023 - jun. 2023"
+        company = "Water Platform Company"
+        link = "https://www.hydronet.com/"
+        details = """
+Ontwikkelen van een verbeterde versie van de Scheduler binnen het HydroNET platform.
+Verbeteringen doorgevoerd in de interne management tool van HydroNET, waaronder statistieken over uitgevoerde achtergrondtaken.
+Gebruik gemaakt van Angular in de frontend en .NET C# in de backend en scheduler.
+"""
 
         [[params.jobs.list]]
         position = "Vakkenvuller"
