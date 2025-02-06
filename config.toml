@@ -73,7 +73,7 @@ disableKinds = ["taxonomy"]
         title = "Ervaring"
 
         [[params.jobs.list]]
-        position = "Junior software ontwikkelaar"
+        position = "Software ontwikkelaar"
         dates = "sep. 2023 - *Heden*"
         company = "Water Platform Company"
         link = "https://www.hydronet.com/"
